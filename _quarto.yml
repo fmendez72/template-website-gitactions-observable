@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Quarto Observable Template"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: data.qmd
+        text: Data
+  page-navigation: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true

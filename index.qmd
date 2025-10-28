@@ -1,0 +1,12 @@
+---
+title: "Welcome"
+---
+
+# Welcome to Our Project
+
+![](images/banner.jpg){width="100%"}
+
+This is a minimal Quarto website powered by **Observable JavaScript**.  
+It's designed for collaborative projects that don't require R or Python runtimes.
+
+Use this as a starting template for GitHub Pages deployments.

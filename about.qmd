@@ -1,0 +1,13 @@
+---
+title: "About"
+---
+
+# About This Project
+
+This site demonstrates a simple **Quarto + Observable** integration.
+
+- The site is built entirely with Quarto.
+- The data table is rendered client-side via Observable.
+- Everything is hosted statically on **GitHub Pages**.
+
+This structure is ideal for collaborative academic or research websites where one person manages the layout, and collaborators can edit text content directly through GitHub's web interface.
