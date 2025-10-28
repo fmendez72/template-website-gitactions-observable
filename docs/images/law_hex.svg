@@ -1,0 +1,54 @@
+<svg width="800" height="924" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define the hexagon shape -->
+  <defs>
+    <style>
+      .hex-bg { fill: #8B1538; stroke: #FFFFFF; stroke-width: 8; }
+      .gold { fill: #D4AF37; stroke: #D4AF37; }
+      .white-text { fill: #FFFFFF; font-family: Georgia, serif; font-weight: bold; }
+      .gold-text { fill: #D4AF37; font-family: Georgia, serif; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Hexagon background -->
+  <polygon class="hex-bg"
+           points="400,30 730,242 730,666 400,878 70,666 70,242" />
+
+  <!-- Scales of Justice -->
+  <!-- Center post -->
+  <rect class="gold" x="395" y="344" width="10" height="120" />
+
+  <!-- Balance beam -->
+  <rect class="gold" x="300" y="339" width="200" height="10" />
+
+  <!-- Left scale -->
+  <line class="gold" x1="320" y1="344" x2="320" y2="394" stroke-width="4" />
+  <circle class="gold" cx="320" cy="424" r="50" fill="none" stroke-width="4" />
+
+  <!-- Right scale -->
+  <line class="gold" x1="480" y1="344" x2="480" y2="394" stroke-width="4" />
+  <circle class="gold" cx="480" cy="424" r="50" fill="none" stroke-width="4" />
+
+  <!-- Decorative elements - book pages -->
+  <g transform="translate(400, 280)">
+    <!-- Open book -->
+    <path class="gold" d="M -60,-20 L -60,20 L -5,25 L -5,-15 Z" opacity="0.3" />
+    <path class="gold" d="M 60,-20 L 60,20 L 5,25 L 5,-15 Z" opacity="0.3" />
+  </g>
+
+  <!-- Laurel wreath elements (left) -->
+  <path d="M 180,520 Q 150,540 160,570 Q 170,550 180,520" class="gold" opacity="0.4" />
+  <path d="M 170,560 Q 140,580 150,610 Q 160,590 170,560" class="gold" opacity="0.4" />
+
+  <!-- Laurel wreath elements (right) -->
+  <path d="M 620,520 Q 650,540 640,570 Q 630,550 620,520" class="gold" opacity="0.4" />
+  <path d="M 630,560 Q 660,580 650,610 Q 640,590 630,560" class="gold" opacity="0.4" />
+
+  <!-- Title -->
+  <text x="400" y="580" class="white-text" font-size="80" text-anchor="middle">LEX</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="650" class="gold-text" font-size="40" text-anchor="middle">ACADEMIA</text>
+
+  <!-- Small decorative line -->
+  <line x1="320" y1="670" x2="480" y2="670" stroke="#D4AF37" stroke-width="2" opacity="0.6" />
+</svg>
