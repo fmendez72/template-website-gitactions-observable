@@ -7,6 +7,7 @@ title: "Data Table"
 Below is a basic interactive data table, rendered client-side using **Observable**.
 
 ```{ojs}
+//| echo: false
 import {Table} from "@observablehq/inputs"
 
 data = FileAttachment("data/table.csv").csv({typed: true})
