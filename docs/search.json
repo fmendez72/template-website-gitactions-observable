@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data Table",
+    "section": "",
+    "text": "Interactive Data Table\nBelow is a basic interactive data table, rendered client-side using Observable.\n\nimport {Table} from \"@observablehq/inputs\"\n\ndata = FileAttachment(\"data/table.csv\").csv({typed: true})\n\nviewof table = Table(data, {\n  search: true,\n  sortable: true,\n  width: \"100%\"\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization\nBelow is a bar chart showing the values by person and country.\n\nPlot = require(\"@observablehq/plot\")\n\nPlot.plot({\n  marginLeft: 60,\n  x: {\n    grid: true,\n    label: \"Value\"\n  },\n  y: {\n    label: \"Name\"\n  },\n  color: {\n    legend: true,\n    label: \"Country\"\n  },\n  marks: [\n    Plot.barX(data, {\n      x: \"Value\",\n      y: \"Name\",\n      fill: \"Country\",\n      sort: {y: \"-x\"},\n      tip: true\n    }),\n    Plot.ruleX([0])\n  ]\n})"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to Our Project\n\nThis is a minimal Quarto website powered by Observable JavaScript.\nIt’s designed for collaborative projects that don’t require R or Python runtimes.\nUse this as a starting template for GitHub Pages deployments."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About This Project\nThis site demonstrates a simple Quarto + Observable integration.\n\nThe site is built entirely with Quarto.\nThe data table is rendered client-side via Observable.\nEverything is hosted statically on GitHub Pages.\n\nThis structure is ideal for collaborative academic or research websites where one person manages the layout, and collaborators can edit text content directly through GitHub’s web interface."
+  }
+]

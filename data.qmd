@@ -1,5 +1,6 @@
 ---
 title: "Data Table"
+echo: false
 ---
 
 # Interactive Data Table
@@ -7,7 +8,6 @@ title: "Data Table"
 Below is a basic interactive data table, rendered client-side using **Observable**.
 
 ```{ojs}
-//| echo: false
 import {Table} from "@observablehq/inputs"
 
 data = FileAttachment("data/table.csv").csv({typed: true})
@@ -16,5 +16,38 @@ viewof table = Table(data, {
   search: true,
   sortable: true,
   width: "100%"
+})
+```
+
+# Data Visualization
+
+Below is a bar chart showing the values by person and country.
+
+```{ojs}
+Plot = require("@observablehq/plot")
+
+Plot.plot({
+  marginLeft: 60,
+  x: {
+    grid: true,
+    label: "Value"
+  },
+  y: {
+    label: "Name"
+  },
+  color: {
+    legend: true,
+    label: "Country"
+  },
+  marks: [
+    Plot.barX(data, {
+      x: "Value",
+      y: "Name",
+      fill: "Country",
+      sort: {y: "-x"},
+      tip: true
+    }),
+    Plot.ruleX([0])
+  ]
 })
 ```
