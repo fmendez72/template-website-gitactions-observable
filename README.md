@@ -1,4 +1,4 @@
-# Quarto Observable Template
+# Quarto Observable Template with gitactions
 
 A minimal Quarto website template using Observable JavaScript for interactive data tables. No R or Python runtime required.
 
